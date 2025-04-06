@@ -15,7 +15,25 @@ public interface EmployeeService {
      */
     Employee login(EmployeeLoginDTO employeeLoginDTO);
 
+    /**
+     * 员工注册
+     * @param employeeDTO
+     */
     void save(EmployeeDTO employeeDTO);
 
+
+    /**
+     * 查询员工信息
+     * @param
+     * @return
+     */
     PageResult pageQuery(EmployeePageQueryDTO employeePageQueryDTO);
+
+
+    /**
+     * 账号启用
+     * @param status
+     * @param id
+     */
+    void startOrStop(Integer status, Long id);
 }
